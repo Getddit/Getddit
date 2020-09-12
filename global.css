@@ -1,0 +1,489 @@
+/* EVERYTHING HERE IS PRIMARILY USED TO TOGGLE BETWEEN LIGHT AND DARK MODE. */
+
+/* We specify the custom colors that we will be using. */
+:root {
+  --color-orange-100: #ffc66c;
+  --color-orange-200: #ffbf5a;
+  --color-orange-300: #ffb644;
+  --color-orange-400: #ffad2c;
+  --color-orange-500: #ff9c00;
+  --color-orange-600: #ff8b00;
+  --color-orange-700: #ff7c00;
+  /* --color-orange-800: #ff6400;
+  --color-orange-900: #ff5100; */
+  --color-orange-800: #c35811d3;
+  --color-orange-900: #943b00ca;
+}
+
+/* LIGHT THEME */
+html {
+  /* background by SVGBackgrounds.com */
+  --bg-color: #ffffff;
+  /* --bg-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3CradialGradient id='a' gradientUnits='objectBoundingBox'%3E%3Cstop offset='0' stop-color='%23ffffff'/%3E%3Cstop offset='1' stop-color='%23d9d9d9'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='750' x2='1550' y2='750'%3E%3Cstop offset='0' stop-color='%23ececec'/%3E%3Cstop offset='1' stop-color='%23d9d9d9'/%3E%3C/linearGradient%3E%3Cpath id='s' fill='url(%23b)' d='M1549.2 51.6c-5.4 99.1-20.2 197.6-44.2 293.6c-24.1 96-57.4 189.4-99.3 278.6c-41.9 89.2-92.4 174.1-150.3 253.3c-58 79.2-123.4 152.6-195.1 219c-71.7 66.4-149.6 125.8-232.2 177.2c-82.7 51.4-170.1 94.7-260.7 129.1c-90.6 34.4-184.4 60-279.5 76.3C192.6 1495 96.1 1502 0 1500c96.1-2.1 191.8-13.3 285.4-33.6c93.6-20.2 185-49.5 272.5-87.2c87.6-37.7 171.3-83.8 249.6-137.3c78.4-53.5 151.5-114.5 217.9-181.7c66.5-67.2 126.4-140.7 178.6-218.9c52.3-78.3 96.9-161.4 133-247.9c36.1-86.5 63.8-176.2 82.6-267.6c18.8-91.4 28.6-184.4 29.6-277.4c0.3-27.6 23.2-48.7 50.8-48.4s49.5 21.8 49.2 49.5c0 0.7 0 1.3-0.1 2L1549.2 51.6z'/%3E%3Cg id='g'%3E%3Cuse href='%23s' transform='scale(0.12) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.2) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.25) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(0.3) rotate(-20)'/%3E%3Cuse href='%23s' transform='scale(0.4) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(0.5) rotate(20)'/%3E%3Cuse href='%23s' transform='scale(0.6) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.7) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.835) rotate(-40)'/%3E%3Cuse href='%23s' transform='scale(0.9) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(1.05) rotate(25)'/%3E%3Cuse href='%23s' transform='scale(1.2) rotate(8)'/%3E%3Cuse href='%23s' transform='scale(1.333) rotate(-60)'/%3E%3Cuse href='%23s' transform='scale(1.45) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(1.6) rotate(10)'/%3E%3C/g%3E%3C/defs%3E%3Cg transform='translate(2000 0)'%3E%3Cg transform='translate(0 165)'%3E%3Ccircle fill='url(%23a)' r='3000'/%3E%3Cg opacity='0.5'%3E%3Ccircle fill='url(%23a)' r='2000'/%3E%3Ccircle fill='url(%23a)' r='1800'/%3E%3Ccircle fill='url(%23a)' r='1700'/%3E%3Ccircle fill='url(%23a)' r='1651'/%3E%3Ccircle fill='url(%23a)' r='1450'/%3E%3Ccircle fill='url(%23a)' r='1250'/%3E%3Ccircle fill='url(%23a)' r='1175'/%3E%3Ccircle fill='url(%23a)' r='900'/%3E%3Ccircle fill='url(%23a)' r='750'/%3E%3Ccircle fill='url(%23a)' r='500'/%3E%3Ccircle fill='url(%23a)' r='380'/%3E%3Ccircle fill='url(%23a)' r='250'/%3E%3C/g%3E%3Cg %3E%3Cuse href='%23g' transform='rotate(10)'/%3E%3Cuse href='%23g' transform='rotate(120)'/%3E%3Cuse href='%23g' transform='rotate(240)'/%3E%3C/g%3E%3Ccircle fill-opacity='0.14' fill='url(%23a)' r='3000'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
+  --bg-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3CradialGradient id='a' gradientUnits='objectBoundingBox'%3E%3Cstop offset='0' stop-color='%23ececec'/%3E%3Cstop offset='1' stop-color='%23ffffff'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='750' x2='1550' y2='750'%3E%3Cstop offset='0' stop-color='%23f6f6f6'/%3E%3Cstop offset='1' stop-color='%23ffffff'/%3E%3C/linearGradient%3E%3Cpath id='s' fill='url(%23b)' d='M1549.2 51.6c-5.4 99.1-20.2 197.6-44.2 293.6c-24.1 96-57.4 189.4-99.3 278.6c-41.9 89.2-92.4 174.1-150.3 253.3c-58 79.2-123.4 152.6-195.1 219c-71.7 66.4-149.6 125.8-232.2 177.2c-82.7 51.4-170.1 94.7-260.7 129.1c-90.6 34.4-184.4 60-279.5 76.3C192.6 1495 96.1 1502 0 1500c96.1-2.1 191.8-13.3 285.4-33.6c93.6-20.2 185-49.5 272.5-87.2c87.6-37.7 171.3-83.8 249.6-137.3c78.4-53.5 151.5-114.5 217.9-181.7c66.5-67.2 126.4-140.7 178.6-218.9c52.3-78.3 96.9-161.4 133-247.9c36.1-86.5 63.8-176.2 82.6-267.6c18.8-91.4 28.6-184.4 29.6-277.4c0.3-27.6 23.2-48.7 50.8-48.4s49.5 21.8 49.2 49.5c0 0.7 0 1.3-0.1 2L1549.2 51.6z'/%3E%3Cg id='g'%3E%3Cuse href='%23s' transform='scale(0.12) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.2) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.25) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(0.3) rotate(-20)'/%3E%3Cuse href='%23s' transform='scale(0.4) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(0.5) rotate(20)'/%3E%3Cuse href='%23s' transform='scale(0.6) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.7) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.835) rotate(-40)'/%3E%3Cuse href='%23s' transform='scale(0.9) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(1.05) rotate(25)'/%3E%3Cuse href='%23s' transform='scale(1.2) rotate(8)'/%3E%3Cuse href='%23s' transform='scale(1.333) rotate(-60)'/%3E%3Cuse href='%23s' transform='scale(1.45) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(1.6) rotate(10)'/%3E%3C/g%3E%3C/defs%3E%3Cg transform='translate(2000 0)'%3E%3Cg transform='translate(0 165)'%3E%3Ccircle fill='url(%23a)' r='3000'/%3E%3Cg opacity='0.5'%3E%3Ccircle fill='url(%23a)' r='2000'/%3E%3Ccircle fill='url(%23a)' r='1800'/%3E%3Ccircle fill='url(%23a)' r='1700'/%3E%3Ccircle fill='url(%23a)' r='1651'/%3E%3Ccircle fill='url(%23a)' r='1450'/%3E%3Ccircle fill='url(%23a)' r='1250'/%3E%3Ccircle fill='url(%23a)' r='1175'/%3E%3Ccircle fill='url(%23a)' r='900'/%3E%3Ccircle fill='url(%23a)' r='750'/%3E%3Ccircle fill='url(%23a)' r='500'/%3E%3Ccircle fill='url(%23a)' r='380'/%3E%3Ccircle fill='url(%23a)' r='250'/%3E%3C/g%3E%3Cg %3E%3Cuse href='%23g' transform='rotate(10)'/%3E%3Cuse href='%23g' transform='rotate(120)'/%3E%3Cuse href='%23g' transform='rotate(240)'/%3E%3C/g%3E%3Ccircle fill-opacity='0.14' fill='url(%23a)' r='3000'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+  --main-title: #ee5522;
+  --sub-title: #ee5522;
+  --skewed: #ececec6e;
+  --gen-text: #000000;
+  
+  --search-icon: #ec3e04;
+  --search-bar-bg: #fcfcfc;
+  --search-bar-border: #ece5e5;
+  --search-text: #272727;
+  --search-btn-bg-inactive: #ee5522;
+  --search-btn-bg-active: #ec3e04;
+  --search-btn-font: #ececec;
+
+  --results-title: #1a0dab;
+  --results-href: #3c3c3f;
+  --results-desc: #2d2f31;
+  --results-num: #63686d;
+
+  --top-toggle-txt: #ec3e04;
+  --tgl-circle: #ffffff;
+  --tgl-inactive: #7f8992;
+  --tgl-active: #ec3e04;
+
+  --hburger-bg: #2c3e50;
+  --hburger-bar: #ee5522;
+  --hburger-cross: #d13e3e;
+  --hburger-text: #ffffff;
+
+  --pagi-bg-inactive: #dadadace;
+  --pagi-font-inactive: #ec3e04;
+  --pagi-bg-active: #ee5522;
+  --pagi-font-active: #ffffff;
+
+  --infiniteS-loading: #ee5522;
+  --skeleton-pri: #cfcdcd;
+  --skeleton-sec: rgba(255, 255, 255, 0.5) 60%;
+}
+
+/* ORANGE THEME */
+/* html[data-theme="orange"] { */
+  /* background by SVGBackgrounds.com */
+  /* --bg-color: #ee5522;
+  --bg-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3CradialGradient id='a' gradientUnits='objectBoundingBox'%3E%3Cstop offset='0' stop-color='%23FB3'/%3E%3Cstop offset='1' stop-color='%23ee5522'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='750' x2='1550' y2='750'%3E%3Cstop offset='0' stop-color='%23f7882b'/%3E%3Cstop offset='1' stop-color='%23ee5522'/%3E%3C/linearGradient%3E%3Cpath id='s' fill='url(%23b)' d='M1549.2 51.6c-5.4 99.1-20.2 197.6-44.2 293.6c-24.1 96-57.4 189.4-99.3 278.6c-41.9 89.2-92.4 174.1-150.3 253.3c-58 79.2-123.4 152.6-195.1 219c-71.7 66.4-149.6 125.8-232.2 177.2c-82.7 51.4-170.1 94.7-260.7 129.1c-90.6 34.4-184.4 60-279.5 76.3C192.6 1495 96.1 1502 0 1500c96.1-2.1 191.8-13.3 285.4-33.6c93.6-20.2 185-49.5 272.5-87.2c87.6-37.7 171.3-83.8 249.6-137.3c78.4-53.5 151.5-114.5 217.9-181.7c66.5-67.2 126.4-140.7 178.6-218.9c52.3-78.3 96.9-161.4 133-247.9c36.1-86.5 63.8-176.2 82.6-267.6c18.8-91.4 28.6-184.4 29.6-277.4c0.3-27.6 23.2-48.7 50.8-48.4s49.5 21.8 49.2 49.5c0 0.7 0 1.3-0.1 2L1549.2 51.6z'/%3E%3Cg id='g'%3E%3Cuse href='%23s' transform='scale(0.12) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.2) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.25) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(0.3) rotate(-20)'/%3E%3Cuse href='%23s' transform='scale(0.4) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(0.5) rotate(20)'/%3E%3Cuse href='%23s' transform='scale(0.6) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.7) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.835) rotate(-40)'/%3E%3Cuse href='%23s' transform='scale(0.9) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(1.05) rotate(25)'/%3E%3Cuse href='%23s' transform='scale(1.2) rotate(8)'/%3E%3Cuse href='%23s' transform='scale(1.333) rotate(-60)'/%3E%3Cuse href='%23s' transform='scale(1.45) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(1.6) rotate(10)'/%3E%3C/g%3E%3C/defs%3E%3Cg transform='translate(2000 0)'%3E%3Cg transform='translate(0 165)'%3E%3Ccircle fill='url(%23a)' r='3000'/%3E%3Cg opacity='0.5'%3E%3Ccircle fill='url(%23a)' r='2000'/%3E%3Ccircle fill='url(%23a)' r='1800'/%3E%3Ccircle fill='url(%23a)' r='1700'/%3E%3Ccircle fill='url(%23a)' r='1651'/%3E%3Ccircle fill='url(%23a)' r='1450'/%3E%3Ccircle fill='url(%23a)' r='1250'/%3E%3Ccircle fill='url(%23a)' r='1175'/%3E%3Ccircle fill='url(%23a)' r='900'/%3E%3Ccircle fill='url(%23a)' r='750'/%3E%3Ccircle fill='url(%23a)' r='500'/%3E%3Ccircle fill='url(%23a)' r='380'/%3E%3Ccircle fill='url(%23a)' r='250'/%3E%3C/g%3E%3Cg %3E%3Cuse href='%23g' transform='rotate(10)'/%3E%3Cuse href='%23g' transform='rotate(120)'/%3E%3Cuse href='%23g' transform='rotate(240)'/%3E%3C/g%3E%3Ccircle fill-opacity='0.14' fill='url(%23a)' r='3000'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+  --main-title: #2c3e50;
+  --sub-title: #ff5d27;
+  --skewed: #2c3e50;
+  --gen-text: #000000;
+  
+  --search-bar-bg: #fcfcfc;
+  --search-bar-border: #ece5e5;
+  --search-text: #272727;
+  --search-btn-bg-inactive: #2c3e50;
+  --search-btn-bg-active: #2669acef;
+  --search-btn-font: #ececec;
+
+  --top-toggle-txt: #331c01;
+  --tgl-circle: #ffffff;
+  --tgl-inactive: #7f8992;
+  --tgl-active: #2c3e50;
+
+  --hburger-bg: #2c3e50;
+  --hburger-bar: #2c3e50;
+  --hburger-cross: #d13e3e;
+  --hburger-text: #ffffff;
+
+  --pagi-bg-inactive: #2c3e50;
+  --pagi-font-inactive: #949494;
+  --pagi-bg-active: #d34415;
+  --pagi-font-active: #ffffff;
+} */
+
+/* DARK THEME */
+html[data-theme="dark"] {
+  /* background by SVGBackgrounds.com */
+  --bg-color: #000000;
+  --bg-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3CradialGradient id='a' gradientUnits='objectBoundingBox'%3E%3Cstop offset='0' stop-color='%231a171d'/%3E%3Cstop offset='1' stop-color='%23000000'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='750' x2='1550' y2='750'%3E%3Cstop offset='0' stop-color='%230d0c0f'/%3E%3Cstop offset='1' stop-color='%23000000'/%3E%3C/linearGradient%3E%3Cpath id='s' fill='url(%23b)' d='M1549.2 51.6c-5.4 99.1-20.2 197.6-44.2 293.6c-24.1 96-57.4 189.4-99.3 278.6c-41.9 89.2-92.4 174.1-150.3 253.3c-58 79.2-123.4 152.6-195.1 219c-71.7 66.4-149.6 125.8-232.2 177.2c-82.7 51.4-170.1 94.7-260.7 129.1c-90.6 34.4-184.4 60-279.5 76.3C192.6 1495 96.1 1502 0 1500c96.1-2.1 191.8-13.3 285.4-33.6c93.6-20.2 185-49.5 272.5-87.2c87.6-37.7 171.3-83.8 249.6-137.3c78.4-53.5 151.5-114.5 217.9-181.7c66.5-67.2 126.4-140.7 178.6-218.9c52.3-78.3 96.9-161.4 133-247.9c36.1-86.5 63.8-176.2 82.6-267.6c18.8-91.4 28.6-184.4 29.6-277.4c0.3-27.6 23.2-48.7 50.8-48.4s49.5 21.8 49.2 49.5c0 0.7 0 1.3-0.1 2L1549.2 51.6z'/%3E%3Cg id='g'%3E%3Cuse href='%23s' transform='scale(0.12) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.2) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.25) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(0.3) rotate(-20)'/%3E%3Cuse href='%23s' transform='scale(0.4) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(0.5) rotate(20)'/%3E%3Cuse href='%23s' transform='scale(0.6) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.7) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.835) rotate(-40)'/%3E%3Cuse href='%23s' transform='scale(0.9) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(1.05) rotate(25)'/%3E%3Cuse href='%23s' transform='scale(1.2) rotate(8)'/%3E%3Cuse href='%23s' transform='scale(1.333) rotate(-60)'/%3E%3Cuse href='%23s' transform='scale(1.45) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(1.6) rotate(10)'/%3E%3C/g%3E%3C/defs%3E%3Cg transform='translate(2000 0)'%3E%3Cg transform='translate(0 165)'%3E%3Ccircle fill='url(%23a)' r='3000'/%3E%3Cg opacity='0.5'%3E%3Ccircle fill='url(%23a)' r='2000'/%3E%3Ccircle fill='url(%23a)' r='1800'/%3E%3Ccircle fill='url(%23a)' r='1700'/%3E%3Ccircle fill='url(%23a)' r='1651'/%3E%3Ccircle fill='url(%23a)' r='1450'/%3E%3Ccircle fill='url(%23a)' r='1250'/%3E%3Ccircle fill='url(%23a)' r='1175'/%3E%3Ccircle fill='url(%23a)' r='900'/%3E%3Ccircle fill='url(%23a)' r='750'/%3E%3Ccircle fill='url(%23a)' r='500'/%3E%3Ccircle fill='url(%23a)' r='380'/%3E%3Ccircle fill='url(%23a)' r='250'/%3E%3C/g%3E%3Cg %3E%3Cuse href='%23g' transform='rotate(10)'/%3E%3Cuse href='%23g' transform='rotate(120)'/%3E%3Cuse href='%23g' transform='rotate(240)'/%3E%3C/g%3E%3Ccircle fill-opacity='0.06' fill='url(%23a)' r='3000'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+  --main-title: #ff5d27;
+  --sub-title: #ff6e3d;
+  --gen-text: #e2e2e2;
+  --skewed: #131b229b;
+  
+  --search-icon: #ffffff;
+  --search-bar-bg: #646060;
+  --search-bar-border: #494747;
+  --search-text: #e0e0e0;
+  --search-btn-bg-inactive: #ee5522;
+  --search-btn-bg-active: #fd4407;
+  --search-btn-font: #000000;
+
+  --results-href: #7c7c7c;
+  --results-title: #ffffff;
+  --results-desc: #b1b1b1;
+  --results-num: #b1b1b1;
+
+  --top-toggle-txt: #cdcdcd;
+  --tgl-circle: #ffffff;
+  --tgl-inactive: #2c3e50;
+  --tgl-active: #ee5522;
+
+  --hburger-bg: #646060;
+  --hburger-bar: #ee5522;
+  --hburger-cross: #ffe9e9;
+  --hburger-text: #ffffff;
+
+  --pagi-bg-inactive: #131b22d7;
+  --pagi-font-inactive: #999999;
+  --pagi-bg-active: #ee5522;
+  --pagi-font-active: #ffffff;
+
+  --infiniteS-loading: #cc2c2c;
+  --skeleton-pri: #353030;
+  --skeleton-sec: rgba(83, 83, 83, 0.5) 60%;
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  overflow-x: hidden;
+  height: 100%;
+
+  /* background by SVGBackgrounds.com */
+  background-color: var(--bg-color);
+  background-image: var(--bg-image);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Page Header/Title */
+.page-header {
+  color: var(--main-title);
+}
+.sub-header {
+  color: var(--sub-title);
+}
+
+
+
+/* START search results */
+.res-title {
+  color: var(--results-title);
+}
+.res-href {
+  color: var(--results-href);
+}
+.res-desc {
+  color: var(--results-desc);
+}
+.res-num {
+  color: var(--results-num);
+}
+/* END search results */
+
+
+
+/* START Search bar */
+.search-icon {
+  left: 2.2rem;
+  color: var(--search-icon);
+}
+@media screen and (max-width: 1500px) {
+  .search-icon {
+    left: 1.8rem;
+  }
+}
+.search-icon-t {
+  left: 2.2rem;
+  color: var(--search-icon);
+}
+@media screen and (max-width: 810px) {
+  .search-icon-t {
+    left: 1.8rem;
+  }
+}
+.search-icon-s {
+  color: var(--search-icon);
+}
+.bg-search-bar {
+  background-color: var(--search-bar-bg);
+  border-color: var(--search-bar-border);
+  color: var(--search-text);
+}
+/* END search bar */
+
+
+
+/* START search btn */
+.search-btn {
+  background-color: var(--search-btn-bg-inactive);
+  color: var(--search-btn-font);
+}
+.search-btn:hover {
+  background-color: var(--search-btn-bg-active);
+}
+/* END search btn */
+
+
+
+/* START skewed design */
+.skewed {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 14%;
+  background: var(--skewed);
+  z-index: 0;
+  transform: skewY(0deg);
+  transform-origin: top right;
+  display: flex;
+}
+.skewed-extra {
+  transform: skewY(0deg);
+  height: 100px;
+}
+@media screen and (max-width: 810px) {
+  .skewed-extra {
+    transform: skewY(0deg);
+    height: 130px;
+  }
+}
+/* END skewed design */
+
+
+
+/* START toggle buttons */
+.toggleTxt {
+  color: var(--top-toggle-txt);
+}
+.toggleIpt {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+.toggleLbl {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 52px;
+  height: 27px;
+  background: var(--tgl-inactive);
+  float: right;
+  border-radius: 100px;
+  position: relative;
+}
+.toggleLbl:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  background: var(--tgl-circle);
+  border-radius: 90px;
+  transition: 0.3s;
+}
+.toggleIpt:checked + label {
+  background: var(--tgl-active);
+}
+.toggleIpt:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+.toggleLbl:active:after {
+  width: 45px;
+}
+/* END toggle buttons */
+
+
+
+/* START Results loading page */
+.skeleton-box {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--skeleton-pri);
+}
+.skeleton-box::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-100%);
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0,
+    rgba(255, 255, 255, 0.2) 20%,
+    var(--skeleton-sec),
+    rgba(255, 255, 255, 0)
+  );
+  animation: shimmer 1.5s infinite;
+  content: '';
+}
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+/* END Results loading page */
+
+
+
+/* START Menu/Hamburger Menu */
+.menu-container {
+  margin-top: 13px;
+  position: absolute;
+  display: inline-block;
+  /* align-items: center; */
+  margin-bottom: 20px;
+  background: transparent;
+  padding: 20px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: flex-end;
+  /* float: right; */
+  top: 0;
+  right: 0;
+}
+.menu-container input {
+  display: block;
+  width: 35px;
+  height: 25px;
+  margin: 0;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  -webkit-touch-callout: none;
+}
+/* Burger menu */
+.menu-container span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: var(--hburger-bar);
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+.menu-container span:first-child {
+  transform-origin: 0% 0%;
+}
+.menu-container span:nth-child(3) {
+  transform-origin: 0% 100%;
+}
+.menu-container input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(3px,-1px);
+  background: var(--hburger-cross);
+}
+.menu-container input:checked ~ span:nth-child(4) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+.menu-container input:checked ~ span:nth-child(3) {
+  transform: rotate(-45deg) translate(-5px,11px);
+}
+.menu-container input:checked ~ .menu {
+  transform: translateX(-100%);
+}
+.menu {
+  position: absolute;
+  box-sizing: border-box;
+  width: 300px;
+  right: -300px;
+  top: 0;
+  margin: -20px;
+  padding: 75px 50px 50px;
+  background: var(--hburger-bg);
+  color: var(--hburger-text);
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  transform-origin: 0% 0%;
+  transform: translateX(0%);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+.menu ul {
+  list-style: none;
+}
+.menu li {
+  padding: 10px 0;
+  font-size: 16px;
+}
+/* END Menu/Hamburger Menu */
+
+
+
+/* START pagination */
+.pagii {
+  color: var(--pagi-font-inactive);
+  background-color: var(--pagi-bg-inactive);
+}
+.pagii:hover {
+  background-color: var(--pagi-bg-active);
+  color: var(--pagi-font-active);
+}
+
+/* .pagination-wrapper {
+  margin-bottom: 3rem;
+}
+.pagination {
+  display: inline-block;
+  height: 50px;
+  padding: 0 25px;
+  border-radius: 35px;
+  background-color: var(--pagi-bg-inactive);
+}
+@media only screen and (max-width: 1199px) {
+  .pagination {
+    height: 50px;
+    margin-top: 50px;
+    padding: 0 10px;
+    border-radius: 25px;
+  }
+}
+.pagii {
+  background-color: transparent;
+  display: block;
+  padding: 0 20px;
+  float: left;
+  color: var(--pagi-font-inactive);
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  margin-top: 5px;
+  line-height: 40px;
+}
+.pagii-numbers {
+  background-color: transparent;
+}
+.pagii-numbers:hover, .pagii-numbers.current {
+  background-color: var(--pagi-bg-active);
+  color: var(--pagi-font-active);
+}
+.pagii-numbers.prev:hover, .pagii-numbers.next:hover {
+  background-color: transparent;
+  color: var(--pagi-bg-active);
+}
+@media only screen and (max-width: 1199px) {
+  .pagii, .pagii-numbers, .pagii-greyed {
+    padding: 0 15px;
+    font-size: 16px;
+    line-height: 50px;
+  }
+} */
+/* END pagination */
+
+
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
+}

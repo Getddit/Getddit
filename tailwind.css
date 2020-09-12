@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+
+/* You can also add custom native css like so. Just use normal css without the '@apply'. */
+cite {
+  font-size: 80%;
+}
+
+button {
+	@apply rounded-full outline-none;
+}
+
+button:hover {
+  @apply outline-none;
+}
+
+button:disabled {
+	@apply outline-none;
+}
+
+button:not(:disabled):active {
+	@apply outline-none;
+}
+
+button:focus {
+	@apply outline-none;
+}
+
+@tailwind utilities;

@@ -11,7 +11,7 @@
   --color-orange-700: #ff7c00;
   /* --color-orange-800: #ff6400;
   --color-orange-900: #ff5100; */
-  --color-orange-800: #c35811d3;
+  --color-orange-800: #c35811f8;
   --color-orange-900: #943b00ca;
 }
 
@@ -39,6 +39,7 @@ html {
   --results-href: #3c3c3f;
   --results-desc: #2d2f31;
   --results-num: #63686d;
+  --tooltip-bg: #ffb744f1;
 
   --top-toggle-txt: #ec3e04;
   --tgl-circle: #ffffff;
@@ -117,6 +118,7 @@ html[data-theme="dark"] {
   --results-title: #ffffff;
   --results-desc: #b1b1b1;
   --results-num: #b1b1b1;
+  --tooltip-bg: #c35811f8;
 
   --top-toggle-txt: #cdcdcd;
   --tgl-circle: #ffffff;

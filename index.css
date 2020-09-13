@@ -647,10 +647,18 @@ button:focus {
   background-color: transparent;
 }
 
+.bg-orange-700 {
+  background-color: var(--color-orange-700);
+}
+
 .bg-green-500 {
   --bg-opacity: 1;
   background-color: #48bb78;
   background-color: rgba(72, 187, 120, var(--bg-opacity));
+}
+
+.hover\:bg-orange-900:hover {
+  background-color: var(--color-orange-900);
 }
 
 .hover\:bg-green-700:hover {
@@ -691,6 +699,10 @@ button:focus {
   display: none;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .items-center {
   align-items: center;
 }
@@ -699,12 +711,20 @@ button:focus {
   align-items: stretch;
 }
 
+.self-center {
+  align-self: center;
+}
+
 .justify-center {
   justify-content: center;
 }
 
 .justify-between {
   justify-content: space-between;
+}
+
+.content-around {
+  align-content: space-around;
 }
 
 .flex-1 {
@@ -775,6 +795,10 @@ button:focus {
   line-height: 1.5;
 }
 
+.ml-0 {
+  margin-left: 0;
+}
+
 .mt-1 {
   margin-top: 0.25rem;
 }
@@ -793,6 +817,10 @@ button:focus {
 
 .mt-24 {
   margin-top: 6rem;
+}
+
+.mt-32 {
+  margin-top: 8rem;
 }
 
 .mt-40 {
@@ -817,6 +845,10 @@ button:focus {
 
 .focus\:outline-none:focus {
   outline: 0;
+}
+
+.p-5 {
+  padding: 1.25rem;
 }
 
 .py-1 {
@@ -859,6 +891,10 @@ button:focus {
   padding-right: 3rem;
 }
 
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
 .pt-4 {
   padding-top: 1rem;
 }
@@ -873,6 +909,10 @@ button:focus {
 
 .pt-5 {
   padding-top: 1.25rem;
+}
+
+.pr-5 {
+  padding-right: 1.25rem;
 }
 
 .pr-6 {
@@ -929,6 +969,10 @@ button:focus {
 
 .right-0 {
   right: 0;
+}
+
+.resize {
+  resize: both;
 }
 
 .shadow-xl {
@@ -1097,6 +1141,10 @@ button:focus {
     font-size: 10rem;
   }
 
+  .lg\:mr-0 {
+    margin-right: 0;
+  }
+
   .lg\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
@@ -1108,5 +1156,11 @@ button:focus {
 
   .lg\:w-3\/5 {
     width: 60%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .xl\:ml-16 {
+    margin-left: 4rem;
   }
 }

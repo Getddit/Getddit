@@ -759,6 +759,10 @@ button:focus {
   height: 2.5rem;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .h-full {
   height: 100%;
 }

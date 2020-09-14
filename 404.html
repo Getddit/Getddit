@@ -20,6 +20,10 @@
 	<link rel="manifest" href="manifest.json">
 	
 	<script>
+		// Clickjacking prevention
+		if (top.location != self.location) {
+			top.location = self.location;
+		}
 		// Put the setting of the theme at the very start of the application
 		window.addEventListener('DOMContentLoaded', (event) => {
 			var val = window.localStorage.getItem('APP_THEME');
